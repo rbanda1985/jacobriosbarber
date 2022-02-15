@@ -1,11 +1,8 @@
 import React from "react";
+import "./Home.css";
 
-const Home = () => {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
+const Home = ({ title }) => {
+  return <div style={{ color: "white" }}>Home</div>;
 };
 
 export default Home;

@@ -1,0 +1,23 @@
+.navbar-nav {
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.homeLink {
+  flex-grow: 2;
+}
+
+.headerLink {
+  color: gold;
+  font-size: 1em;
+}
+
+.headerLink:hover {
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.15s ease-in-out;
+}
+
+.contact {
+  padding-right: 2em;
+}

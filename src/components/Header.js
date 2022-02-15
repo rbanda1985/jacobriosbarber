@@ -1,22 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import "./Header.css";
 
 const Header = () => {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" sticky="top">
         <Container>
-          <Navbar.Brand>Navbar</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">
-              Home
+            <Nav.Link as={Link} to="/" className="homeLink">
+              <span className="headerLink home">Home</span>
             </Nav.Link>
             <Nav.Link as={Link} to="contact">
-              Contact
+              <span className="headerLink contact">Contact</span>
             </Nav.Link>
             <Nav.Link as={Link} to="/appointment">
-              Schedule Appointment
+              <span className="headerLink schedule">Schedule Appointment</span>
             </Nav.Link>
           </Nav>
         </Container>
