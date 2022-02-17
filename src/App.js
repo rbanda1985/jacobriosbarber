@@ -3,24 +3,22 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Contact from "./components/Contact";
-import Appointment from "./components/Appointment";
+import Location from "./components/Location";
+import Services from "./components/Services";
 import "bootstrap/dist/css/bootstrap.css";
-import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Footer />
 
       <Routes>
         <Route path="/" component={<Home />} element={<Home />} />
-        <Route path="contact" component={<Contact />} element={<Contact />} />
+        <Route path="contact" component={<Location />} element={<Location />} />
         <Route
-          path="/appointment"
-          component={<Appointment />}
-          element={<Appointment />}
+          path="/services"
+          component={<Services />}
+          element={<Services />}
         />
       </Routes>
     </div>

@@ -1,7 +1,8 @@
-/* body {
-  background: url("/public/assets/agustin-fernandez.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.title {
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  font-family: "Lobster", cursive;
+}

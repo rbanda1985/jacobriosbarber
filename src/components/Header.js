@@ -1,24 +1,52 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Nav,
+  FormControl,
+  Button,
+  Offcanvas,
+  Form
+} from "react-bootstrap";
 import "./Header.css";
 
 const Header = () => {
   return (
-    <div>
-      <Navbar bg="dark" variant="dark" sticky="top">
-        <Container>
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/" className="homeLink">
-              <span className="headerLink home">Home</span>
-            </Nav.Link>
-            <Nav.Link as={Link} to="contact">
-              <span className="headerLink contact">Contact</span>
-            </Nav.Link>
-            <Nav.Link as={Link} to="/appointment">
-              <span className="headerLink schedule">Schedule Appointment</span>
-            </Nav.Link>
-          </Nav>
+    <div className="header-component">
+      <Navbar bg="dark" expand={false}>
+        <Container fluid>
+          <Navbar.Brand as={Link} to="/">
+            <span className="navLogo">Jacob Rios Barber</span>
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="offcanvasNavbar"
+            style={{ color: "lightgrey" }}
+          />
+          <Navbar.Offcanvas
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id="offcanvasNavbarLabel">
+                Navigation
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav.Link as={Link} to="/">
+                  <span class="links">Home</span>
+                </Nav.Link>
+                <Nav.Link as={Link} to="/location">
+                  <span class="links">Location</span>
+                </Nav.Link>
+                <Nav.Link as={Link} to="/services">
+                  <span class="links">Services</span>
+                </Nav.Link>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
         </Container>
       </Navbar>
     </div>

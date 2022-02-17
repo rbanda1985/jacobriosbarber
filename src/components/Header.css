@@ -1,7 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap");
+
+.navLogo {
+  font-family: "Lobster", cursive, sans-serif;
+  color: lightgrey;
+}
+
+.navbar-toggler-icon {
+  background-color: lightgrey;
+}
+
+.navbar-toggler.collapsed {
+  background-color: lightgrey;
+  padding: 0.25rem 0.4rem;
+}
+
+.navbar-toggler.collapsed:hover {
+  background-color: gold;
+  transition: color 0.5s ease-in-out;
+}
+
+.navLogo:hover {
+  color: gold;
+  transition: color 0.5s ease-in-out;
+}
+
 .navbar-nav {
   justify-content: flex-end;
   flex-grow: 1;
   margin: 0;
+  height: 10rem;
+  align-items: center;
 }
 
 .homeLink {
@@ -10,7 +39,7 @@
 
 .headerLink {
   color: gold;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .headerLink:hover {
@@ -20,4 +49,33 @@
 
 .contact {
   padding-right: 2em;
+}
+
+.offcanvas-body {
+  background-color: #000000;
+}
+
+.links {
+  color: #777777;
+  font-family: "Satisfy", cursive, sans-serif;
+  font-size: 1.5em;
+}
+
+.links:hover {
+  color: gold;
+  transition: color 0.4s ease-in-out;
+}
+
+.btn-close {
+  background-color: #777777;
+}
+
+.offcanvas-header {
+  background-color: #000000;
+  font-family: "Satisfy", cursive, sans-serif;
+}
+
+.offcanvas-title {
+  color: #777777;
+  font-size: 1.5em;
 }
