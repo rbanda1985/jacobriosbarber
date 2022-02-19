@@ -1,9 +1,0 @@
-.location-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.location {
-  color: gold;
-  padding: 0.2em;
-}
