@@ -1,8 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Jura&family=Lobster&display=swap");
 
-.title {
-  color: white;
-  text-align: center;
-  padding-top: 2em;
-  font-family: "Lobster", cursive;
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/src/assets/services.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-opening {
+  display: flex;
+  flex-direction: column;
+  height: 50em;
+  padding-top: 20em;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  margin-left: 5em;
+}
+
+.first-sentence {
+  color: lightgrey;
+
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.second-sentence {
+  color: lightgrey;
+
+  font-family: "Cormorant", serif;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.third-sentence {
+  color: lightgrey;
+  font-family: "Cormorant", serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.location-btn {
+  margin-right: 1em;
+  padding: 0.5em;
+}
+
+.book-btn {
+  padding: 0.5em;
 }

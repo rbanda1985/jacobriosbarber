@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura&family=Lobster&display=swap");
 
 .navLogo {
   font-family: "Lobster", cursive, sans-serif;
@@ -7,17 +6,13 @@
 }
 
 .navbar-toggler-icon {
-  background-color: lightgrey;
+  background-color: #777777;
 }
 
 .navbar-toggler.collapsed {
-  background-color: lightgrey;
+  background-color: #777777;
   padding: 0.25rem 0.4rem;
-}
-
-.navbar-toggler.collapsed:hover {
-  background-color: gold;
-  transition: color 0.5s ease-in-out;
+  margin-right: 0.5em;
 }
 
 .navLogo:hover {
@@ -56,8 +51,8 @@
 }
 
 .links {
-  color: #777777;
-  font-family: "Satisfy", cursive, sans-serif;
+  color: lightgrey;
+  font-family: "Jura", sans-serif;
   font-size: 1.5em;
 }
 
@@ -66,16 +61,20 @@
   transition: color 0.4s ease-in-out;
 }
 
-.btn-close {
+button.btn-close {
   background-color: #777777;
 }
 
 .offcanvas-header {
   background-color: #000000;
-  font-family: "Satisfy", cursive, sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
 .offcanvas-title {
   color: #777777;
   font-size: 1.5em;
+}
+
+.navbar-toggle {
+  background-color: #777777;
 }

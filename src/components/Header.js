@@ -1,21 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Navbar,
-  Container,
-  Nav,
-  FormControl,
-  Button,
-  Offcanvas,
-  Form
-} from "react-bootstrap";
+import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
 import "./Header.css";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const Header = () => {
   return (
     <div className="header-component">
       <Navbar bg="dark" expand={false}>
         <Container fluid>
+          <Navbar.Brand
+            href="https://www.instagram.com/jacobriosbarber/"
+            target="_blank"
+          >
+            <FaInstagramSquare style={{ fontSize: "2em" }} />
+          </Navbar.Brand>
           <Navbar.Brand as={Link} to="/">
             <span className="navLogo">Jacob Rios Barber</span>
           </Navbar.Brand>
