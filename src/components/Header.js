@@ -41,7 +41,7 @@ const Header = () => {
                   <span class="links">Location</span>
                 </Nav.Link>
                 <Nav.Link as={Link} to="/services">
-                  <span class="links">Services</span>
+                  <span class="links">Booking</span>
                 </Nav.Link>
               </Nav>
             </Offcanvas.Body>
