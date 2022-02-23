@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Location from "./components/Location";
 import Services from "./components/Services";
 import "bootstrap/dist/css/bootstrap.css";
+import Gallery from "./components/Gallery";
 
 function App() {
   const location = {
@@ -29,6 +30,7 @@ function App() {
           component={<Services />}
           element={<Services />}
         />
+        <Route path="/gallery" component={<Gallery />} element={<Gallery />} />
       </Routes>
     </div>
   );
