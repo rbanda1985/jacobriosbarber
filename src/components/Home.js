@@ -11,7 +11,7 @@ const Home = () => {
         </div>
         <div className="second-sentence">
           <p>
-            Styled Haircuts <br />
+            Clean And Precise Haircuts <br />
             For The Best Version Of Yourself
           </p>
         </div>

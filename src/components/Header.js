@@ -9,10 +9,7 @@ const Header = () => {
     <div className="header-component">
       <Navbar bg="dark" expand={false}>
         <Container fluid>
-          <Navbar.Brand
-            href="https://www.instagram.com/jacobriosbarber/"
-            target="_blank"
-          >
+          <Navbar.Brand href="https://www.instagram.com/jacobriosbarber/">
             <FaInstagramSquare style={{ fontSize: "2em" }} />
           </Navbar.Brand>
           <Navbar.Brand as={Link} to="/">
@@ -35,13 +32,13 @@ const Header = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link as={Link} to="/">
-                  <span class="links">Home</span>
+                  <span className="links">Home</span>
                 </Nav.Link>
                 <Nav.Link as={Link} to="/location">
-                  <span class="links">Location</span>
+                  <span className="links">Location</span>
                 </Nav.Link>
                 <Nav.Link as={Link} to="/services">
-                  <span class="links">Booking</span>
+                  <span className="links">Booking</span>
                 </Nav.Link>
               </Nav>
             </Offcanvas.Body>
