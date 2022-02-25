@@ -7,7 +7,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 const Header = () => {
   return (
     <div className="header-component">
-      <Navbar bg="dark" expand={false}>
+      <Navbar bg="dark" expand={false} collapseOnSelect={true}>
         <Container fluid>
           <Navbar.Brand href="https://www.instagram.com/jacobriosbarber/">
             <FaInstagramSquare style={{ fontSize: "2em" }} />
@@ -31,16 +31,16 @@ const Header = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link as={Link} to="/">
+                <Nav.Link eventKey="1" as={Link} to="/">
                   <span className="links">Home</span>
                 </Nav.Link>
-                <Nav.Link as={Link} to="/location">
+                <Nav.Link eventKey="2" as={Link} to="/location">
                   <span className="links">Location</span>
                 </Nav.Link>
-                <Nav.Link as={Link} to="/services">
+                <Nav.Link eventKey="3" as={Link} to="/services">
                   <span className="links">Booking</span>
                 </Nav.Link>
-                <Nav.Link as={Link} to="/gallery">
+                <Nav.Link eventKey="4" as={Link} to="/gallery">
                   <span className="links">Gallery</span>
                 </Nav.Link>
               </Nav>
