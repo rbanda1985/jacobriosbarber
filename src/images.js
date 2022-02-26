@@ -1,7 +1,8 @@
+import image1 from "./assets/gallery1.jpg";
 const images = [
   {
     id: 1,
-    image: "./assets/gallery1.jpg"
+    image: `${image1}`
   },
   {
     id: 2,
