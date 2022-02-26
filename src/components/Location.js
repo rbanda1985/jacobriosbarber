@@ -4,6 +4,7 @@ import LocationPin from "./LocationPin";
 import "./Location.css";
 
 const Location = ({ location, zoomLevel }) => {
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
   return (
     <div className="map-container">
       <div className="google-map">
@@ -13,7 +14,7 @@ const Location = ({ location, zoomLevel }) => {
         </h3>
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: "AIzaSyCzTjiuMzc1InauZvzXgfEZL0icTMCz0LA"
+            key: API_KEY
           }}
           defaultCenter={location}
           defaultZoom={zoomLevel}
